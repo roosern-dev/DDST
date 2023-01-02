@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rusernyeoh/projects/datium_data_science_test/DDST/experiments/259684807826601441/e35b5ba3481c4dfbb5431c90fbd04d38/artifacts
+end_time: 1672671892091
+entry_point_name: ''
+experiment_id: '259684807826601441'
+lifecycle_stage: active
+run_id: e35b5ba3481c4dfbb5431c90fbd04d38
+run_name: Initial_run_3_decision_tree
+run_uuid: e35b5ba3481c4dfbb5431c90fbd04d38
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672671883986
+status: 3
+tags: []
+user_id: rusernyeoh

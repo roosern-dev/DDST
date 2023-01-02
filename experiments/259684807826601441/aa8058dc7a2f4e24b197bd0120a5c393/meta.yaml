@@ -1,8 +1,9 @@
 artifact_uri: file:///Users/rusernyeoh/projects/datium_data_science_test/DDST/experiments/259684807826601441/aa8058dc7a2f4e24b197bd0120a5c393/artifacts
+deleted_time: 1672669943754
 end_time: 1672669240382
 entry_point_name: ''
 experiment_id: '259684807826601441'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: aa8058dc7a2f4e24b197bd0120a5c393
 run_name: Initial_run_mlp
 run_uuid: aa8058dc7a2f4e24b197bd0120a5c393
