@@ -1,0 +1,544 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.9.15
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.0
+mlflow_version: 2.1.1
+model_uuid: c1838026bd40485cb129cdd32756672d
+run_id: 6c127bad84b34a24b0ac016123b10021
+signature:
+  inputs: '[{"name": "YearGroup", "type": "double"}, {"name": "MonthGroup", "type":
+    "double"}, {"name": "SequenceNum", "type": "double"}, {"name": "GearNum", "type":
+    "double"}, {"name": "DoorNum", "type": "double"}, {"name": "EngineSize", "type":
+    "double"}, {"name": "EngineDescription", "type": "double"}, {"name": "Cylinders",
+    "type": "double"}, {"name": "FuelCapacity", "type": "double"}, {"name": "WheelBase",
+    "type": "double"}, {"name": "Height", "type": "double"}, {"name": "Length", "type":
+    "double"}, {"name": "Width", "type": "double"}, {"name": "KerbWeight", "type":
+    "double"}, {"name": "Power", "type": "double"}, {"name": "PowerRPMTo", "type":
+    "double"}, {"name": "Torque", "type": "double"}, {"name": "TorqueRPMTo", "type":
+    "double"}, {"name": "SeatCapacity", "type": "double"}, {"name": "ValvesCylinder",
+    "type": "double"}, {"name": "TowingBrakes", "type": "double"}, {"name": "WarrantyYears",
+    "type": "double"}, {"name": "WarrantyKM", "type": "double"}, {"name": "FuelCombined",
+    "type": "double"}, {"name": "AverageKM", "type": "double"}, {"name": "GoodKM",
+    "type": "double"}, {"name": "NewPrice", "type": "double"}, {"name": "Age_Comp_Months",
+    "type": "double"}, {"name": "KM", "type": "double"}, {"name": "RearTyreRadius(inches)",
+    "type": "double"}, {"name": "RearTyreWidth(mm)", "type": "double"}, {"name": "RearTyreRatio",
+    "type": "double"}, {"name": "FrontTyreRadius(inches)", "type": "double"}, {"name":
+    "FrontTyreWidth(mm)", "type": "double"}, {"name": "FrontTyreRatio", "type": "double"},
+    {"name": "Sold_Year", "type": "double"}, {"name": "Sold_Month", "type": "double"},
+    {"name": "Compliance_Year", "type": "double"}, {"name": "Make_Alfa Romeo", "type":
+    "double"}, {"name": "Make_Audi", "type": "double"}, {"name": "Make_Bentley", "type":
+    "double"}, {"name": "Make_Chery", "type": "double"}, {"name": "Make_Chrysler",
+    "type": "double"}, {"name": "Make_Citroen", "type": "double"}, {"name": "Make_Daewoo",
+    "type": "double"}, {"name": "Make_Daihatsu", "type": "double"}, {"name": "Make_Dodge",
+    "type": "double"}, {"name": "Make_Ferrari", "type": "double"}, {"name": "Make_Fiat",
+    "type": "double"}, {"name": "Make_Ford", "type": "double"}, {"name": "Make_Great
+    Wall", "type": "double"}, {"name": "Make_Holden", "type": "double"}, {"name":
+    "Make_Honda", "type": "double"}, {"name": "Make_Hyundai", "type": "double"}, {"name":
+    "Make_Jaguar", "type": "double"}, {"name": "Make_Jeep", "type": "double"}, {"name":
+    "Make_Land Rover", "type": "double"}, {"name": "Make_Lexus", "type": "double"},
+    {"name": "Make_Lotus", "type": "double"}, {"name": "Make_MINI", "type": "double"},
+    {"name": "Make_Maserati", "type": "double"}, {"name": "Make_Mazda", "type": "double"},
+    {"name": "Make_Mercedes-Benz", "type": "double"}, {"name": "Make_Mitsubishi",
+    "type": "double"}, {"name": "Make_Nissan", "type": "double"}, {"name": "Make_Opel",
+    "type": "double"}, {"name": "Make_Peugeot", "type": "double"}, {"name": "Make_Porsche",
+    "type": "double"}, {"name": "Make_Proton", "type": "double"}, {"name": "Make_Renault",
+    "type": "double"}, {"name": "Make_SKODA", "type": "double"}, {"name": "Make_Saab",
+    "type": "double"}, {"name": "Make_SsangYong", "type": "double"}, {"name": "Make_Subaru",
+    "type": "double"}, {"name": "Make_Suzuki", "type": "double"}, {"name": "Make_Toyota",
+    "type": "double"}, {"name": "Make_Volkswagen", "type": "double"}, {"name": "Make_Volvo",
+    "type": "double"}, {"name": "Make_smart", "type": "double"}, {"name": "CurrentRelease_F",
+    "type": "double"}, {"name": "ImportFlag_L", "type": "double"}, {"name": "LimitedEdition_F",
+    "type": "double"}, {"name": "LimitedEdition_T", "type": "double"}, {"name": "BodyStyleDescription_Bus",
+    "type": "double"}, {"name": "BodyStyleDescription_Cab Chassis", "type": "double"},
+    {"name": "BodyStyleDescription_Cabriolet", "type": "double"}, {"name": "BodyStyleDescription_Convertible",
+    "type": "double"}, {"name": "BodyStyleDescription_Coupe", "type": "double"}, {"name":
+    "BodyStyleDescription_Hardtop", "type": "double"}, {"name": "BodyStyleDescription_Hatchback",
+    "type": "double"}, {"name": "BodyStyleDescription_Liftback", "type": "double"},
+    {"name": "BodyStyleDescription_Roadster", "type": "double"}, {"name": "BodyStyleDescription_Sedan",
+    "type": "double"}, {"name": "BodyStyleDescription_Softtop", "type": "double"},
+    {"name": "BodyStyleDescription_Traytop", "type": "double"}, {"name": "BodyStyleDescription_Utility",
+    "type": "double"}, {"name": "BodyStyleDescription_Van", "type": "double"}, {"name":
+    "BodyStyleDescription_Wagon", "type": "double"}, {"name": "DriveDescription_4X4",
+    "type": "double"}, {"name": "DriveDescription_4X4 Constant", "type": "double"},
+    {"name": "DriveDescription_4X4 Dual Range", "type": "double"}, {"name": "DriveDescription_4X4
+    On Demand", "type": "double"}, {"name": "DriveDescription_Four Wheel Drive", "type":
+    "double"}, {"name": "DriveDescription_Front Wheel Drive", "type": "double"}, {"name":
+    "DriveDescription_Rear Wheel Drive", "type": "double"}, {"name": "DriveCode_4WD",
+    "type": "double"}, {"name": "DriveCode_4X4", "type": "double"}, {"name": "DriveCode_4XC",
+    "type": "double"}, {"name": "DriveCode_4XD", "type": "double"}, {"name": "DriveCode_4XO",
+    "type": "double"}, {"name": "DriveCode_FWD", "type": "double"}, {"name": "DriveCode_RWD",
+    "type": "double"}, {"name": "GearTypeDescription_Automatic", "type": "double"},
+    {"name": "GearTypeDescription_Constantly Variable Transmission", "type": "double"},
+    {"name": "GearTypeDescription_Manual", "type": "double"}, {"name": "GearTypeDescription_Manual
+    Auto-clutch - H Pattern", "type": "double"}, {"name": "GearTypeDescription_Seq.
+    Manual Auto-Single Clutch", "type": "double"}, {"name": "GearTypeDescription_Sports
+    Automatic", "type": "double"}, {"name": "GearTypeDescription_Sports Automatic
+    Dual Clutch", "type": "double"}, {"name": "GearTypeDescription_Sports Automatic
+    Single Clutch", "type": "double"}, {"name": "GearLocationDescription_Column",
+    "type": "double"}, {"name": "GearLocationDescription_Dash", "type": "double"},
+    {"name": "GearLocationDescription_Floor", "type": "double"}, {"name": "GearLocationDescription_S/Wheel
+    & Column", "type": "double"}, {"name": "GearLocationDescription_S/Wheel & Dash",
+    "type": "double"}, {"name": "GearLocationDescription_S/Wheel & Floor", "type":
+    "double"}, {"name": "GearLocationDescription_Steering Wheel", "type": "double"},
+    {"name": "FuelTypeDescription_Diesel", "type": "double"}, {"name": "FuelTypeDescription_LPG
+    only", "type": "double"}, {"name": "FuelTypeDescription_Petrol", "type": "double"},
+    {"name": "FuelTypeDescription_Petrol - Premium ULP", "type": "double"}, {"name":
+    "FuelTypeDescription_Petrol - Unleaded ULP", "type": "double"}, {"name": "FuelTypeDescription_Petrol
+    or LPG (Dual)", "type": "double"}, {"name": "InductionDescription_Aspirated",
+    "type": "double"}, {"name": "InductionDescription_Supercharged", "type": "double"},
+    {"name": "InductionDescription_Supercharged Intercooled", "type": "double"}, {"name":
+    "InductionDescription_Turbo", "type": "double"}, {"name": "InductionDescription_Turbo
+    Intercooled", "type": "double"}, {"name": "InductionDescription_Turbo Supercharged
+    Intercooled", "type": "double"}, {"name": "InductionDescription_Twin Turbo Intercooled",
+    "type": "double"}, {"name": "OptionCategory_BUS", "type": "double"}, {"name":
+    "OptionCategory_CC", "type": "double"}, {"name": "OptionCategory_PASS", "type":
+    "double"}, {"name": "OptionCategory_SUV", "type": "double"}, {"name": "OptionCategory_VAN",
+    "type": "double"}, {"name": "CamDescription_DOHC with VVT", "type": "double"},
+    {"name": "CamDescription_DOHC with VVT & Lift", "type": "double"}, {"name": "CamDescription_DOHC
+    with Variable Valve Lift", "type": "double"}, {"name": "CamDescription_Double
+    Overhead Cam", "type": "double"}, {"name": "CamDescription_OHC with VVT", "type":
+    "double"}, {"name": "CamDescription_OHC with VVT & Lift", "type": "double"}, {"name":
+    "CamDescription_OHC with Variable Valve Lift", "type": "double"}, {"name": "CamDescription_Overhead
+    Cam", "type": "double"}, {"name": "CamDescription_Pushrod", "type": "double"},
+    {"name": "CamDescription_Pushrod with VVT", "type": "double"}, {"name": "EngineTypeDescription_Piston",
+    "type": "double"}, {"name": "EngineTypeDescription_Piston - Electric", "type":
+    "double"}, {"name": "FuelDeliveryDescription_Carburettor Multiple", "type": "double"},
+    {"name": "FuelDeliveryDescription_Carburettor Single", "type": "double"}, {"name":
+    "FuelDeliveryDescription_Direct & Multi-Point Injection", "type": "double"}, {"name":
+    "FuelDeliveryDescription_Direct Injection", "type": "double"}, {"name": "FuelDeliveryDescription_Multi-Point
+    Injection", "type": "double"}, {"name": "FuelDeliveryDescription_Single-Point
+    Injection", "type": "double"}, {"name": "MethodOfDeliveryDescription_Electronic",
+    "type": "double"}, {"name": "MethodOfDeliveryDescription_Electronic Sequential",
+    "type": "double"}, {"name": "MethodOfDeliveryDescription_Mechanical", "type":
+    "double"}, {"name": "BuildCountryOriginDescription_ARGENTINA", "type": "double"},
+    {"name": "BuildCountryOriginDescription_AUSTRALIA", "type": "double"}, {"name":
+    "BuildCountryOriginDescription_AUSTRIA", "type": "double"}, {"name": "BuildCountryOriginDescription_BELGIUM",
+    "type": "double"}, {"name": "BuildCountryOriginDescription_CANADA", "type": "double"},
+    {"name": "BuildCountryOriginDescription_CHINA", "type": "double"}, {"name": "BuildCountryOriginDescription_CZECH
+    REPUBLIC", "type": "double"}, {"name": "BuildCountryOriginDescription_FRANCE",
+    "type": "double"}, {"name": "BuildCountryOriginDescription_GERMANY", "type": "double"},
+    {"name": "BuildCountryOriginDescription_HUNGARY", "type": "double"}, {"name":
+    "BuildCountryOriginDescription_INDIA", "type": "double"}, {"name": "BuildCountryOriginDescription_INDONESIA",
+    "type": "double"}, {"name": "BuildCountryOriginDescription_ITALY", "type": "double"},
+    {"name": "BuildCountryOriginDescription_JAPAN", "type": "double"}, {"name": "BuildCountryOriginDescription_MALAYSIA",
+    "type": "double"}, {"name": "BuildCountryOriginDescription_MEXICO", "type": "double"},
+    {"name": "BuildCountryOriginDescription_NETHERLANDS", "type": "double"}, {"name":
+    "BuildCountryOriginDescription_POLAND", "type": "double"}, {"name": "BuildCountryOriginDescription_PORTUGAL",
+    "type": "double"}, {"name": "BuildCountryOriginDescription_SLOVAKIA", "type":
+    "double"}, {"name": "BuildCountryOriginDescription_SOUTH AFRICA", "type": "double"},
+    {"name": "BuildCountryOriginDescription_SOUTH KOREA", "type": "double"}, {"name":
+    "BuildCountryOriginDescription_SPAIN", "type": "double"}, {"name": "BuildCountryOriginDescription_SWEDEN",
+    "type": "double"}, {"name": "BuildCountryOriginDescription_TAIWAN", "type": "double"},
+    {"name": "BuildCountryOriginDescription_THAILAND", "type": "double"}, {"name":
+    "BuildCountryOriginDescription_TURKEY", "type": "double"}, {"name": "BuildCountryOriginDescription_UNITED
+    KINGDOM", "type": "double"}, {"name": "BuildCountryOriginDescription_UNITED STATES",
+    "type": "double"}, {"name": "EngineCycleDescription_4 Stroke", "type": "double"},
+    {"name": "EngineConfigurationDescription_Horizontal", "type": "double"}, {"name":
+    "EngineConfigurationDescription_In-line", "type": "double"}, {"name": "EngineConfigurationDescription_V",
+    "type": "double"}, {"name": "EngineConfigurationDescription_V15", "type": "double"},
+    {"name": "EngineConfigurationDescription_V60", "type": "double"}, {"name": "EngineConfigurationDescription_V72",
+    "type": "double"}, {"name": "EngineConfigurationDescription_V75", "type": "double"},
+    {"name": "EngineConfigurationDescription_V90", "type": "double"}, {"name": "EngineConfigurationDescription_W72/15",
+    "type": "double"}, {"name": "EngineLocation_Front", "type": "double"}, {"name":
+    "EngineLocation_Mid-Rear", "type": "double"}, {"name": "EngineLocation_Rear",
+    "type": "double"}, {"name": "FrontTyreSize_145/65 R15", "type": "double"}, {"name":
+    "FrontTyreSize_155/65 R13", "type": "double"}, {"name": "FrontTyreSize_155/65
+    R14", "type": "double"}, {"name": "FrontTyreSize_155/70 R14", "type": "double"},
+    {"name": "FrontTyreSize_165 R14 LT 8PR", "type": "double"}, {"name": "FrontTyreSize_165/55
+    R16", "type": "double"}, {"name": "FrontTyreSize_165/60 R15", "type": "double"},
+    {"name": "FrontTyreSize_165/65 R13", "type": "double"}, {"name": "FrontTyreSize_165/65
+    R14", "type": "double"}, {"name": "FrontTyreSize_165/70 R13", "type": "double"},
+    {"name": "FrontTyreSize_165/70 R14", "type": "double"}, {"name": "FrontTyreSize_165/75
+    R13", "type": "double"}, {"name": "FrontTyreSize_175 R14 LT 6PR", "type": "double"},
+    {"name": "FrontTyreSize_175/50 R15", "type": "double"}, {"name": "FrontTyreSize_175/55
+    R15", "type": "double"}, {"name": "FrontTyreSize_175/60 R14", "type": "double"},
+    {"name": "FrontTyreSize_175/60 R15", "type": "double"}, {"name": "FrontTyreSize_175/65
+    R13", "type": "double"}, {"name": "FrontTyreSize_175/65 R14", "type": "double"},
+    {"name": "FrontTyreSize_175/65 R15", "type": "double"}, {"name": "FrontTyreSize_175/70
+    R13", "type": "double"}, {"name": "FrontTyreSize_175/70 R14", "type": "double"},
+    {"name": "FrontTyreSize_175/70 R14 C", "type": "double"}, {"name": "FrontTyreSize_175/75
+    R16", "type": "double"}, {"name": "FrontTyreSize_175/75 R16 C", "type": "double"},
+    {"name": "FrontTyreSize_175/80 R14", "type": "double"}, {"name": "FrontTyreSize_185
+    R14", "type": "double"}, {"name": "FrontTyreSize_185 R14 C", "type": "double"},
+    {"name": "FrontTyreSize_185 R14 C 8PR", "type": "double"}, {"name": "FrontTyreSize_185
+    R14 LT 8PR", "type": "double"}, {"name": "FrontTyreSize_185 R15 C 6PR", "type":
+    "double"}, {"name": "FrontTyreSize_185/55 R14", "type": "double"}, {"name": "FrontTyreSize_185/55
+    R15", "type": "double"}, {"name": "FrontTyreSize_185/55 R16", "type": "double"},
+    {"name": "FrontTyreSize_185/60 R14", "type": "double"}, {"name": "FrontTyreSize_185/60
+    R15", "type": "double"}, {"name": "FrontTyreSize_185/65 R14", "type": "double"},
+    {"name": "FrontTyreSize_185/65 R15", "type": "double"}, {"name": "FrontTyreSize_185/70
+    R13", "type": "double"}, {"name": "FrontTyreSize_185/70 R14", "type": "double"},
+    {"name": "FrontTyreSize_185/75 R14", "type": "double"}, {"name": "FrontTyreSize_185/75
+    R16", "type": "double"}, {"name": "FrontTyreSize_185/75 R16 C", "type": "double"},
+    {"name": "FrontTyreSize_185/80 R14", "type": "double"}, {"name": "FrontTyreSize_195
+    R14", "type": "double"}, {"name": "FrontTyreSize_195 R14 C", "type": "double"},
+    {"name": "FrontTyreSize_195 R14 C (613)", "type": "double"}, {"name": "FrontTyreSize_195
+    R14 C 8PR", "type": "double"}, {"name": "FrontTyreSize_195 R14 LT 8PR", "type":
+    "double"}, {"name": "FrontTyreSize_195 R15 C", "type": "double"}, {"name": "FrontTyreSize_195
+    R15 C 8PR", "type": "double"}, {"name": "FrontTyreSize_195/45 R15", "type": "double"},
+    {"name": "FrontTyreSize_195/45 R16", "type": "double"}, {"name": "FrontTyreSize_195/50
+    R15", "type": "double"}, {"name": "FrontTyreSize_195/50 R16", "type": "double"},
+    {"name": "FrontTyreSize_195/55 R15", "type": "double"}, {"name": "FrontTyreSize_195/55
+    R16", "type": "double"}, {"name": "FrontTyreSize_195/60 R14", "type": "double"},
+    {"name": "FrontTyreSize_195/60 R15", "type": "double"}, {"name": "FrontTyreSize_195/60
+    R16", "type": "double"}, {"name": "FrontTyreSize_195/65 R14", "type": "double"},
+    {"name": "FrontTyreSize_195/65 R15", "type": "double"}, {"name": "FrontTyreSize_195/65
+    R15 C", "type": "double"}, {"name": "FrontTyreSize_195/65 R16", "type": "double"},
+    {"name": "FrontTyreSize_195/65 R16 C", "type": "double"}, {"name": "FrontTyreSize_195/70
+    R14", "type": "double"}, {"name": "FrontTyreSize_195/70 R14 C 6PR", "type": "double"},
+    {"name": "FrontTyreSize_195/70 R15", "type": "double"}, {"name": "FrontTyreSize_195/70
+    R15 C", "type": "double"}, {"name": "FrontTyreSize_195/70 R15 C 8PR", "type":
+    "double"}, {"name": "FrontTyreSize_195/75 R16", "type": "double"}, {"name": "FrontTyreSize_195/75
+    R16 C", "type": "double"}, {"name": "FrontTyreSize_195/80 R14", "type": "double"},
+    {"name": "FrontTyreSize_205 R14", "type": "double"}, {"name": "FrontTyreSize_205
+    R16", "type": "double"}, {"name": "FrontTyreSize_205 R16 6PR", "type": "double"},
+    {"name": "FrontTyreSize_205 R16 C", "type": "double"}, {"name": "FrontTyreSize_205
+    R16 C 6PR", "type": "double"}, {"name": "FrontTyreSize_205 R16 C 8PR", "type":
+    "double"}, {"name": "FrontTyreSize_205/40 R17", "type": "double"}, {"name": "FrontTyreSize_205/40
+    R18", "type": "double"}, {"name": "FrontTyreSize_205/45 R16", "type": "double"},
+    {"name": "FrontTyreSize_205/45 R17", "type": "double"}, {"name": "FrontTyreSize_205/45
+    R17 RSC", "type": "double"}, {"name": "FrontTyreSize_205/50 R15", "type": "double"},
+    {"name": "FrontTyreSize_205/50 R16", "type": "double"}, {"name": "FrontTyreSize_205/50
+    R17", "type": "double"}, {"name": "FrontTyreSize_205/55 R15", "type": "double"},
+    {"name": "FrontTyreSize_205/55 R16", "type": "double"}, {"name": "FrontTyreSize_205/55
+    R17", "type": "double"}, {"name": "FrontTyreSize_205/60 R15", "type": "double"},
+    {"name": "FrontTyreSize_205/60 R16", "type": "double"}, {"name": "FrontTyreSize_205/65
+    R15", "type": "double"}, {"name": "FrontTyreSize_205/65 R15 C", "type": "double"},
+    {"name": "FrontTyreSize_205/65 R16", "type": "double"}, {"name": "FrontTyreSize_205/65
+    R16 C", "type": "double"}, {"name": "FrontTyreSize_205/70 R15", "type": "double"},
+    {"name": "FrontTyreSize_205/70 R15 C", "type": "double"}, {"name": "FrontTyreSize_205/75
+    R14", "type": "double"}, {"name": "FrontTyreSize_205/75 R15 C 8PR", "type": "double"},
+    {"name": "FrontTyreSize_205/75 R16", "type": "double"}, {"name": "FrontTyreSize_205/80
+    R16", "type": "double"}, {"name": "FrontTyreSize_205/80 R16 RF", "type": "double"},
+    {"name": "FrontTyreSize_215 R15", "type": "double"}, {"name": "FrontTyreSize_215/40
+    R17", "type": "double"}, {"name": "FrontTyreSize_215/40 R18", "type": "double"},
+    {"name": "FrontTyreSize_215/45 R16", "type": "double"}, {"name": "FrontTyreSize_215/45
+    R17", "type": "double"}, {"name": "FrontTyreSize_215/45 R18", "type": "double"},
+    {"name": "FrontTyreSize_215/50 R15", "type": "double"}, {"name": "FrontTyreSize_215/50
+    R16", "type": "double"}, {"name": "FrontTyreSize_215/50 R17", "type": "double"},
+    {"name": "FrontTyreSize_215/55 R16", "type": "double"}, {"name": "FrontTyreSize_215/55
+    R16 C", "type": "double"}, {"name": "FrontTyreSize_215/55 R17", "type": "double"},
+    {"name": "FrontTyreSize_215/55 R18", "type": "double"}, {"name": "FrontTyreSize_215/60
+    R15", "type": "double"}, {"name": "FrontTyreSize_215/60 R16", "type": "double"},
+    {"name": "FrontTyreSize_215/60 R16 C", "type": "double"}, {"name": "FrontTyreSize_215/60
+    R17", "type": "double"}, {"name": "FrontTyreSize_215/65 R15", "type": "double"},
+    {"name": "FrontTyreSize_215/65 R15 C", "type": "double"}, {"name": "FrontTyreSize_215/65
+    R16", "type": "double"}, {"name": "FrontTyreSize_215/65 R16 C", "type": "double"},
+    {"name": "FrontTyreSize_215/70 R15", "type": "double"}, {"name": "FrontTyreSize_215/70
+    R15 C", "type": "double"}, {"name": "FrontTyreSize_215/70 R15 C 8PR", "type":
+    "double"}, {"name": "FrontTyreSize_215/70 R16", "type": "double"}, {"name": "FrontTyreSize_215/70
+    R16 C", "type": "double"}, {"name": "FrontTyreSize_215/70 R17", "type": "double"},
+    {"name": "FrontTyreSize_215/75 R16", "type": "double"}, {"name": "FrontTyreSize_215/75
+    R16 C", "type": "double"}, {"name": "FrontTyreSize_215/80 R16", "type": "double"},
+    {"name": "FrontTyreSize_225/35 R19", "type": "double"}, {"name": "FrontTyreSize_225/40
+    R17", "type": "double"}, {"name": "FrontTyreSize_225/40 R18", "type": "double"},
+    {"name": "FrontTyreSize_225/40 R19", "type": "double"}, {"name": "FrontTyreSize_225/45
+    R17", "type": "double"}, {"name": "FrontTyreSize_225/45 R18", "type": "double"},
+    {"name": "FrontTyreSize_225/45 R19", "type": "double"}, {"name": "FrontTyreSize_225/50
+    R16", "type": "double"}, {"name": "FrontTyreSize_225/50 R17", "type": "double"},
+    {"name": "FrontTyreSize_225/55 R16", "type": "double"}, {"name": "FrontTyreSize_225/55
+    R17", "type": "double"}, {"name": "FrontTyreSize_225/55 R18", "type": "double"},
+    {"name": "FrontTyreSize_225/55 R19", "type": "double"}, {"name": "FrontTyreSize_225/60
+    R15", "type": "double"}, {"name": "FrontTyreSize_225/60 R16", "type": "double"},
+    {"name": "FrontTyreSize_225/60 R16 SL", "type": "double"}, {"name": "FrontTyreSize_225/60
+    R17", "type": "double"}, {"name": "FrontTyreSize_225/60 R18", "type": "double"},
+    {"name": "FrontTyreSize_225/65 R16", "type": "double"}, {"name": "FrontTyreSize_225/65
+    R17", "type": "double"}, {"name": "FrontTyreSize_225/65 R18", "type": "double"},
+    {"name": "FrontTyreSize_225/70 R15", "type": "double"}, {"name": "FrontTyreSize_225/70
+    R15 C", "type": "double"}, {"name": "FrontTyreSize_225/70 R15 C 8PR", "type":
+    "double"}, {"name": "FrontTyreSize_225/70 R15 LT", "type": "double"}, {"name":
+    "FrontTyreSize_225/70 R16", "type": "double"}, {"name": "FrontTyreSize_225/70
+    R17", "type": "double"}, {"name": "FrontTyreSize_225/75 R15", "type": "double"},
+    {"name": "FrontTyreSize_225/75 R15 C", "type": "double"}, {"name": "FrontTyreSize_225/75
+    R16", "type": "double"}, {"name": "FrontTyreSize_235 R15 C", "type": "double"},
+    {"name": "FrontTyreSize_235/35 R19", "type": "double"}, {"name": "FrontTyreSize_235/40
+    R18", "type": "double"}, {"name": "FrontTyreSize_235/40 R19", "type": "double"},
+    {"name": "FrontTyreSize_235/45 R17", "type": "double"}, {"name": "FrontTyreSize_235/45
+    R18", "type": "double"}, {"name": "FrontTyreSize_235/45 R19", "type": "double"},
+    {"name": "FrontTyreSize_235/50 R17", "type": "double"}, {"name": "FrontTyreSize_235/50
+    R18", "type": "double"}, {"name": "FrontTyreSize_235/50 R19", "type": "double"},
+    {"name": "FrontTyreSize_235/55 R17", "type": "double"}, {"name": "FrontTyreSize_235/55
+    R18", "type": "double"}, {"name": "FrontTyreSize_235/55 R19", "type": "double"},
+    {"name": "FrontTyreSize_235/60 R16", "type": "double"}, {"name": "FrontTyreSize_235/60
+    R17", "type": "double"}, {"name": "FrontTyreSize_235/60 R18", "type": "double"},
+    {"name": "FrontTyreSize_235/65 R16", "type": "double"}, {"name": "FrontTyreSize_235/65
+    R17", "type": "double"}, {"name": "FrontTyreSize_235/65 R18", "type": "double"},
+    {"name": "FrontTyreSize_235/70 R16", "type": "double"}, {"name": "FrontTyreSize_235/70
+    R17", "type": "double"}, {"name": "FrontTyreSize_235/75 R15", "type": "double"},
+    {"name": "FrontTyreSize_235/80 R16", "type": "double"}, {"name": "FrontTyreSize_235/85
+    R16", "type": "double"}, {"name": "FrontTyreSize_245/35 R19", "type": "double"},
+    {"name": "FrontTyreSize_245/35 R20", "type": "double"}, {"name": "FrontTyreSize_245/40
+    R18", "type": "double"}, {"name": "FrontTyreSize_245/40 R19", "type": "double"},
+    {"name": "FrontTyreSize_245/45 R17", "type": "double"}, {"name": "FrontTyreSize_245/45
+    R18", "type": "double"}, {"name": "FrontTyreSize_245/45 R19", "type": "double"},
+    {"name": "FrontTyreSize_245/45 R20", "type": "double"}, {"name": "FrontTyreSize_245/50
+    R20", "type": "double"}, {"name": "FrontTyreSize_245/55 R19", "type": "double"},
+    {"name": "FrontTyreSize_245/60 R18", "type": "double"}, {"name": "FrontTyreSize_245/65
+    R17", "type": "double"}, {"name": "FrontTyreSize_245/65 R17 RF", "type": "double"},
+    {"name": "FrontTyreSize_245/70 R16", "type": "double"}, {"name": "FrontTyreSize_245/70
+    R16 RF", "type": "double"}, {"name": "FrontTyreSize_245/70 R17", "type": "double"},
+    {"name": "FrontTyreSize_245/75 R15 C", "type": "double"}, {"name": "FrontTyreSize_245/75
+    R16", "type": "double"}, {"name": "FrontTyreSize_245/75 R16 LT 12PR", "type":
+    "double"}, {"name": "FrontTyreSize_245/75 R17", "type": "double"}, {"name": "FrontTyreSize_255/35
+    R19", "type": "double"}, {"name": "FrontTyreSize_255/35 R20", "type": "double"},
+    {"name": "FrontTyreSize_255/40 R18", "type": "double"}, {"name": "FrontTyreSize_255/40
+    R19", "type": "double"}, {"name": "FrontTyreSize_255/45 R17", "type": "double"},
+    {"name": "FrontTyreSize_255/45 R18", "type": "double"}, {"name": "FrontTyreSize_255/45
+    R19", "type": "double"}, {"name": "FrontTyreSize_255/50 R19", "type": "double"},
+    {"name": "FrontTyreSize_255/50 R20", "type": "double"}, {"name": "FrontTyreSize_255/55
+    R17", "type": "double"}, {"name": "FrontTyreSize_255/55 R18", "type": "double"},
+    {"name": "FrontTyreSize_255/55 R19", "type": "double"}, {"name": "FrontTyreSize_255/60
+    R17", "type": "double"}, {"name": "FrontTyreSize_255/60 R18", "type": "double"},
+    {"name": "FrontTyreSize_255/65 R16", "type": "double"}, {"name": "FrontTyreSize_255/65
+    R17", "type": "double"}, {"name": "FrontTyreSize_255/70 R15", "type": "double"},
+    {"name": "FrontTyreSize_255/70 R15 C", "type": "double"}, {"name": "FrontTyreSize_255/70
+    R15 LT", "type": "double"}, {"name": "FrontTyreSize_255/70 R16", "type": "double"},
+    {"name": "FrontTyreSize_255/75 R17", "type": "double"}, {"name": "FrontTyreSize_265/35
+    R19", "type": "double"}, {"name": "FrontTyreSize_265/35 R20", "type": "double"},
+    {"name": "FrontTyreSize_265/40 R21", "type": "double"}, {"name": "FrontTyreSize_265/45
+    R20", "type": "double"}, {"name": "FrontTyreSize_265/50 R20", "type": "double"},
+    {"name": "FrontTyreSize_265/60 R18", "type": "double"}, {"name": "FrontTyreSize_265/65
+    R17", "type": "double"}, {"name": "FrontTyreSize_265/70 R15", "type": "double"},
+    {"name": "FrontTyreSize_265/70 R16", "type": "double"}, {"name": "FrontTyreSize_265/70
+    R16 LT", "type": "double"}, {"name": "FrontTyreSize_265/70 R17", "type": "double"},
+    {"name": "FrontTyreSize_265/75 R15", "type": "double"}, {"name": "FrontTyreSize_265/75
+    R16", "type": "double"}, {"name": "FrontTyreSize_265/75 R16 LT", "type": "double"},
+    {"name": "FrontTyreSize_275/35 R20", "type": "double"}, {"name": "FrontTyreSize_275/40
+    R20", "type": "double"}, {"name": "FrontTyreSize_275/45 R19", "type": "double"},
+    {"name": "FrontTyreSize_275/45 R20", "type": "double"}, {"name": "FrontTyreSize_275/45
+    R21", "type": "double"}, {"name": "FrontTyreSize_275/55 R17", "type": "double"},
+    {"name": "FrontTyreSize_275/65 R17", "type": "double"}, {"name": "FrontTyreSize_275/70
+    R16", "type": "double"}, {"name": "FrontTyreSize_285/50 R20", "type": "double"},
+    {"name": "FrontTyreSize_285/60 R18", "type": "double"}, {"name": "FrontTyreSize_285/65
+    R16", "type": "double"}, {"name": "FrontTyreSize_285/65 R17", "type": "double"},
+    {"name": "FrontTyreSize_295/35 R21", "type": "double"}, {"name": "FrontTyreSize_295/40
+    R20", "type": "double"}, {"name": "FrontTyreSize_295/45 R19", "type": "double"},
+    {"name": "FrontTyreSize_295/45 R20", "type": "double"}, {"name": "FrontTyreSize_7.50
+    R16", "type": "double"}, {"name": "FrontTyreSize_7.50 R16 8PR", "type": "double"},
+    {"name": "FrontTyreSize_7.50 R16 C 6PR", "type": "double"}, {"name": "FrontTyreSize_7.50
+    R16 C 8PR", "type": "double"}, {"name": "FrontTyreSize_7.50 R16 LT 8PR", "type":
+    "double"}, {"name": "RearTyreSize_155/65 R13", "type": "double"}, {"name": "RearTyreSize_155/65
+    R14", "type": "double"}, {"name": "RearTyreSize_155/70 R14", "type": "double"},
+    {"name": "RearTyreSize_165 R14 LT 8PR", "type": "double"}, {"name": "RearTyreSize_165/55
+    R16", "type": "double"}, {"name": "RearTyreSize_165/60 R15", "type": "double"},
+    {"name": "RearTyreSize_165/65 R13", "type": "double"}, {"name": "RearTyreSize_165/65
+    R14", "type": "double"}, {"name": "RearTyreSize_165/70 R13", "type": "double"},
+    {"name": "RearTyreSize_165/70 R14", "type": "double"}, {"name": "RearTyreSize_165/75
+    R13", "type": "double"}, {"name": "RearTyreSize_175 R14 8PR LT", "type": "double"},
+    {"name": "RearTyreSize_175/50 R15", "type": "double"}, {"name": "RearTyreSize_175/55
+    R15", "type": "double"}, {"name": "RearTyreSize_175/60 R14", "type": "double"},
+    {"name": "RearTyreSize_175/60 R15", "type": "double"}, {"name": "RearTyreSize_175/65
+    R13", "type": "double"}, {"name": "RearTyreSize_175/65 R14", "type": "double"},
+    {"name": "RearTyreSize_175/65 R15", "type": "double"}, {"name": "RearTyreSize_175/70
+    R13", "type": "double"}, {"name": "RearTyreSize_175/70 R14", "type": "double"},
+    {"name": "RearTyreSize_175/70 R14 C", "type": "double"}, {"name": "RearTyreSize_175/75
+    R16", "type": "double"}, {"name": "RearTyreSize_175/75 R16 C", "type": "double"},
+    {"name": "RearTyreSize_175/80 R14", "type": "double"}, {"name": "RearTyreSize_185
+    R14", "type": "double"}, {"name": "RearTyreSize_185 R14 C", "type": "double"},
+    {"name": "RearTyreSize_185 R14 C 8PR", "type": "double"}, {"name": "RearTyreSize_185
+    R14 LT 8PR", "type": "double"}, {"name": "RearTyreSize_185 R15 C 6PR", "type":
+    "double"}, {"name": "RearTyreSize_185/55 R14", "type": "double"}, {"name": "RearTyreSize_185/55
+    R15", "type": "double"}, {"name": "RearTyreSize_185/55 R16", "type": "double"},
+    {"name": "RearTyreSize_185/60 R14", "type": "double"}, {"name": "RearTyreSize_185/60
+    R15", "type": "double"}, {"name": "RearTyreSize_185/65 R14", "type": "double"},
+    {"name": "RearTyreSize_185/65 R15", "type": "double"}, {"name": "RearTyreSize_185/70
+    R13", "type": "double"}, {"name": "RearTyreSize_185/70 R14", "type": "double"},
+    {"name": "RearTyreSize_185/75 R14", "type": "double"}, {"name": "RearTyreSize_185/75
+    R16", "type": "double"}, {"name": "RearTyreSize_185/75 R16 C", "type": "double"},
+    {"name": "RearTyreSize_185/80 R14", "type": "double"}, {"name": "RearTyreSize_195
+    R14", "type": "double"}, {"name": "RearTyreSize_195 R14 C", "type": "double"},
+    {"name": "RearTyreSize_195 R14 C (613)", "type": "double"}, {"name": "RearTyreSize_195
+    R14 C 8PR", "type": "double"}, {"name": "RearTyreSize_195 R14 LT 8PR", "type":
+    "double"}, {"name": "RearTyreSize_195 R15 C", "type": "double"}, {"name": "RearTyreSize_195
+    R15 C 8PR", "type": "double"}, {"name": "RearTyreSize_195/45 R15", "type": "double"},
+    {"name": "RearTyreSize_195/45 R16", "type": "double"}, {"name": "RearTyreSize_195/50
+    R15", "type": "double"}, {"name": "RearTyreSize_195/50 R16", "type": "double"},
+    {"name": "RearTyreSize_195/55 R15", "type": "double"}, {"name": "RearTyreSize_195/55
+    R16", "type": "double"}, {"name": "RearTyreSize_195/60 R14", "type": "double"},
+    {"name": "RearTyreSize_195/60 R15", "type": "double"}, {"name": "RearTyreSize_195/60
+    R16", "type": "double"}, {"name": "RearTyreSize_195/65 R14", "type": "double"},
+    {"name": "RearTyreSize_195/65 R15", "type": "double"}, {"name": "RearTyreSize_195/65
+    R15 C", "type": "double"}, {"name": "RearTyreSize_195/65 R16", "type": "double"},
+    {"name": "RearTyreSize_195/65 R16 C", "type": "double"}, {"name": "RearTyreSize_195/70
+    R14", "type": "double"}, {"name": "RearTyreSize_195/70 R14 C 6PR", "type": "double"},
+    {"name": "RearTyreSize_195/70 R15", "type": "double"}, {"name": "RearTyreSize_195/70
+    R15 C", "type": "double"}, {"name": "RearTyreSize_195/70 R15 C 8PR", "type": "double"},
+    {"name": "RearTyreSize_195/75 R16", "type": "double"}, {"name": "RearTyreSize_195/75
+    R16 C", "type": "double"}, {"name": "RearTyreSize_195/75 R16 C DRW", "type": "double"},
+    {"name": "RearTyreSize_195/80 R14", "type": "double"}, {"name": "RearTyreSize_205
+    R14 C", "type": "double"}, {"name": "RearTyreSize_205 R16", "type": "double"},
+    {"name": "RearTyreSize_205 R16 6PR", "type": "double"}, {"name": "RearTyreSize_205
+    R16 C", "type": "double"}, {"name": "RearTyreSize_205 R16 C 6PR", "type": "double"},
+    {"name": "RearTyreSize_205 R16 C 8PR", "type": "double"}, {"name": "RearTyreSize_205/40
+    R17", "type": "double"}, {"name": "RearTyreSize_205/40 R18", "type": "double"},
+    {"name": "RearTyreSize_205/45 R16", "type": "double"}, {"name": "RearTyreSize_205/45
+    R17", "type": "double"}, {"name": "RearTyreSize_205/45 R17 RSC", "type": "double"},
+    {"name": "RearTyreSize_205/50 R15", "type": "double"}, {"name": "RearTyreSize_205/50
+    R16", "type": "double"}, {"name": "RearTyreSize_205/50 R17", "type": "double"},
+    {"name": "RearTyreSize_205/55 R15", "type": "double"}, {"name": "RearTyreSize_205/55
+    R16", "type": "double"}, {"name": "RearTyreSize_205/55 R17", "type": "double"},
+    {"name": "RearTyreSize_205/60 R15", "type": "double"}, {"name": "RearTyreSize_205/60
+    R16", "type": "double"}, {"name": "RearTyreSize_205/65 R15", "type": "double"},
+    {"name": "RearTyreSize_205/65 R15 C", "type": "double"}, {"name": "RearTyreSize_205/65
+    R16", "type": "double"}, {"name": "RearTyreSize_205/65 R16 C", "type": "double"},
+    {"name": "RearTyreSize_205/70 R15", "type": "double"}, {"name": "RearTyreSize_205/70
+    R15 C", "type": "double"}, {"name": "RearTyreSize_205/75 R14", "type": "double"},
+    {"name": "RearTyreSize_205/75 R15 C 8PR", "type": "double"}, {"name": "RearTyreSize_205/80
+    R16", "type": "double"}, {"name": "RearTyreSize_205/80 R16 RF", "type": "double"},
+    {"name": "RearTyreSize_215 R15", "type": "double"}, {"name": "RearTyreSize_215/40
+    R17", "type": "double"}, {"name": "RearTyreSize_215/40 R18", "type": "double"},
+    {"name": "RearTyreSize_215/45 R16", "type": "double"}, {"name": "RearTyreSize_215/45
+    R17", "type": "double"}, {"name": "RearTyreSize_215/45 R18", "type": "double"},
+    {"name": "RearTyreSize_215/50 R15", "type": "double"}, {"name": "RearTyreSize_215/50
+    R16", "type": "double"}, {"name": "RearTyreSize_215/50 R17", "type": "double"},
+    {"name": "RearTyreSize_215/55 R16", "type": "double"}, {"name": "RearTyreSize_215/55
+    R16 C", "type": "double"}, {"name": "RearTyreSize_215/55 R17", "type": "double"},
+    {"name": "RearTyreSize_215/55 R18", "type": "double"}, {"name": "RearTyreSize_215/60
+    R15", "type": "double"}, {"name": "RearTyreSize_215/60 R16", "type": "double"},
+    {"name": "RearTyreSize_215/60 R16 C", "type": "double"}, {"name": "RearTyreSize_215/60
+    R17", "type": "double"}, {"name": "RearTyreSize_215/65 R15", "type": "double"},
+    {"name": "RearTyreSize_215/65 R15 C", "type": "double"}, {"name": "RearTyreSize_215/65
+    R16", "type": "double"}, {"name": "RearTyreSize_215/65 R16 C", "type": "double"},
+    {"name": "RearTyreSize_215/70 R15", "type": "double"}, {"name": "RearTyreSize_215/70
+    R15 C", "type": "double"}, {"name": "RearTyreSize_215/70 R15 C 8PR", "type": "double"},
+    {"name": "RearTyreSize_215/70 R16", "type": "double"}, {"name": "RearTyreSize_215/70
+    R16 C", "type": "double"}, {"name": "RearTyreSize_215/70 R17", "type": "double"},
+    {"name": "RearTyreSize_215/75 R16", "type": "double"}, {"name": "RearTyreSize_215/75
+    R16 C", "type": "double"}, {"name": "RearTyreSize_215/80 R16", "type": "double"},
+    {"name": "RearTyreSize_225/40 R18", "type": "double"}, {"name": "RearTyreSize_225/45
+    R17", "type": "double"}, {"name": "RearTyreSize_225/45 R18", "type": "double"},
+    {"name": "RearTyreSize_225/45 R19", "type": "double"}, {"name": "RearTyreSize_225/50
+    R16", "type": "double"}, {"name": "RearTyreSize_225/50 R17", "type": "double"},
+    {"name": "RearTyreSize_225/55 R16", "type": "double"}, {"name": "RearTyreSize_225/55
+    R17", "type": "double"}, {"name": "RearTyreSize_225/55 R18", "type": "double"},
+    {"name": "RearTyreSize_225/55 R19", "type": "double"}, {"name": "RearTyreSize_225/60
+    R15", "type": "double"}, {"name": "RearTyreSize_225/60 R16", "type": "double"},
+    {"name": "RearTyreSize_225/60 R16 SL", "type": "double"}, {"name": "RearTyreSize_225/60
+    R17", "type": "double"}, {"name": "RearTyreSize_225/60 R18", "type": "double"},
+    {"name": "RearTyreSize_225/65 R16", "type": "double"}, {"name": "RearTyreSize_225/65
+    R17", "type": "double"}, {"name": "RearTyreSize_225/65 R18", "type": "double"},
+    {"name": "RearTyreSize_225/70 R15", "type": "double"}, {"name": "RearTyreSize_225/70
+    R15 C", "type": "double"}, {"name": "RearTyreSize_225/70 R15 C 8PR", "type": "double"},
+    {"name": "RearTyreSize_225/70 R15 LT", "type": "double"}, {"name": "RearTyreSize_225/70
+    R16", "type": "double"}, {"name": "RearTyreSize_225/70 R17", "type": "double"},
+    {"name": "RearTyreSize_225/75 R15", "type": "double"}, {"name": "RearTyreSize_225/75
+    R15 C", "type": "double"}, {"name": "RearTyreSize_225/75 R16", "type": "double"},
+    {"name": "RearTyreSize_235 R15 C", "type": "double"}, {"name": "RearTyreSize_235/35
+    R19", "type": "double"}, {"name": "RearTyreSize_235/40 R18", "type": "double"},
+    {"name": "RearTyreSize_235/45 R17", "type": "double"}, {"name": "RearTyreSize_235/45
+    R18", "type": "double"}, {"name": "RearTyreSize_235/45 R19", "type": "double"},
+    {"name": "RearTyreSize_235/50 R17", "type": "double"}, {"name": "RearTyreSize_235/50
+    R18", "type": "double"}, {"name": "RearTyreSize_235/50 R19", "type": "double"},
+    {"name": "RearTyreSize_235/55 R17", "type": "double"}, {"name": "RearTyreSize_235/55
+    R18", "type": "double"}, {"name": "RearTyreSize_235/55 R19", "type": "double"},
+    {"name": "RearTyreSize_235/60 R16", "type": "double"}, {"name": "RearTyreSize_235/60
+    R17", "type": "double"}, {"name": "RearTyreSize_235/60 R18", "type": "double"},
+    {"name": "RearTyreSize_235/65 R16", "type": "double"}, {"name": "RearTyreSize_235/65
+    R17", "type": "double"}, {"name": "RearTyreSize_235/65 R18", "type": "double"},
+    {"name": "RearTyreSize_235/70 R16", "type": "double"}, {"name": "RearTyreSize_235/70
+    R17", "type": "double"}, {"name": "RearTyreSize_235/75 R15", "type": "double"},
+    {"name": "RearTyreSize_235/80 R16", "type": "double"}, {"name": "RearTyreSize_235/85
+    R16", "type": "double"}, {"name": "RearTyreSize_245/35 R18", "type": "double"},
+    {"name": "RearTyreSize_245/35 R19", "type": "double"}, {"name": "RearTyreSize_245/35
+    R20", "type": "double"}, {"name": "RearTyreSize_245/40 R17", "type": "double"},
+    {"name": "RearTyreSize_245/40 R18", "type": "double"}, {"name": "RearTyreSize_245/40
+    R19", "type": "double"}, {"name": "RearTyreSize_245/45 R17", "type": "double"},
+    {"name": "RearTyreSize_245/45 R18", "type": "double"}, {"name": "RearTyreSize_245/45
+    R19", "type": "double"}, {"name": "RearTyreSize_245/45 R20", "type": "double"},
+    {"name": "RearTyreSize_245/50 R18", "type": "double"}, {"name": "RearTyreSize_245/50
+    R20", "type": "double"}, {"name": "RearTyreSize_245/55 R19", "type": "double"},
+    {"name": "RearTyreSize_245/60 R18", "type": "double"}, {"name": "RearTyreSize_245/65
+    R17", "type": "double"}, {"name": "RearTyreSize_245/65 R17 RF", "type": "double"},
+    {"name": "RearTyreSize_245/70 R16", "type": "double"}, {"name": "RearTyreSize_245/70
+    R16 RF", "type": "double"}, {"name": "RearTyreSize_245/70 R17", "type": "double"},
+    {"name": "RearTyreSize_245/75 R15 C", "type": "double"}, {"name": "RearTyreSize_245/75
+    R16", "type": "double"}, {"name": "RearTyreSize_245/75 R16 LT 12PR", "type": "double"},
+    {"name": "RearTyreSize_245/75 R17", "type": "double"}, {"name": "RearTyreSize_255/35
+    R17", "type": "double"}, {"name": "RearTyreSize_255/35 R18", "type": "double"},
+    {"name": "RearTyreSize_255/35 R19", "type": "double"}, {"name": "RearTyreSize_255/35
+    R20", "type": "double"}, {"name": "RearTyreSize_255/40 R17", "type": "double"},
+    {"name": "RearTyreSize_255/40 R18", "type": "double"}, {"name": "RearTyreSize_255/40
+    R19", "type": "double"}, {"name": "RearTyreSize_255/45 R17", "type": "double"},
+    {"name": "RearTyreSize_255/45 R18", "type": "double"}, {"name": "RearTyreSize_255/50
+    R19", "type": "double"}, {"name": "RearTyreSize_255/50 R20", "type": "double"},
+    {"name": "RearTyreSize_255/55 R17", "type": "double"}, {"name": "RearTyreSize_255/55
+    R18", "type": "double"}, {"name": "RearTyreSize_255/55 R19", "type": "double"},
+    {"name": "RearTyreSize_255/60 R17", "type": "double"}, {"name": "RearTyreSize_255/60
+    R18", "type": "double"}, {"name": "RearTyreSize_255/65 R16", "type": "double"},
+    {"name": "RearTyreSize_255/65 R17", "type": "double"}, {"name": "RearTyreSize_255/70
+    R15", "type": "double"}, {"name": "RearTyreSize_255/70 R15 C", "type": "double"},
+    {"name": "RearTyreSize_255/70 R15 LT", "type": "double"}, {"name": "RearTyreSize_255/70
+    R16", "type": "double"}, {"name": "RearTyreSize_255/75 R17", "type": "double"},
+    {"name": "RearTyreSize_265/35 R18", "type": "double"}, {"name": "RearTyreSize_265/35
+    R19", "type": "double"}, {"name": "RearTyreSize_265/35 R20", "type": "double"},
+    {"name": "RearTyreSize_265/40 R21", "type": "double"}, {"name": "RearTyreSize_265/45
+    R20", "type": "double"}, {"name": "RearTyreSize_265/50 R20", "type": "double"},
+    {"name": "RearTyreSize_265/60 R18", "type": "double"}, {"name": "RearTyreSize_265/65
+    R17", "type": "double"}, {"name": "RearTyreSize_265/70 R15", "type": "double"},
+    {"name": "RearTyreSize_265/70 R16", "type": "double"}, {"name": "RearTyreSize_265/70
+    R16 LT", "type": "double"}, {"name": "RearTyreSize_265/70 R17", "type": "double"},
+    {"name": "RearTyreSize_265/75 R15", "type": "double"}, {"name": "RearTyreSize_265/75
+    R16", "type": "double"}, {"name": "RearTyreSize_265/75 R16 LT", "type": "double"},
+    {"name": "RearTyreSize_275/35 R18", "type": "double"}, {"name": "RearTyreSize_275/35
+    R19", "type": "double"}, {"name": "RearTyreSize_275/35 R20", "type": "double"},
+    {"name": "RearTyreSize_275/40 R19", "type": "double"}, {"name": "RearTyreSize_275/40
+    R20", "type": "double"}, {"name": "RearTyreSize_275/45 R18", "type": "double"},
+    {"name": "RearTyreSize_275/45 R19", "type": "double"}, {"name": "RearTyreSize_275/45
+    R20", "type": "double"}, {"name": "RearTyreSize_275/45 R21", "type": "double"},
+    {"name": "RearTyreSize_275/55 R17", "type": "double"}, {"name": "RearTyreSize_275/65
+    R17", "type": "double"}, {"name": "RearTyreSize_275/70 R16", "type": "double"},
+    {"name": "RearTyreSize_285/30 R19", "type": "double"}, {"name": "RearTyreSize_285/35
+    R18", "type": "double"}, {"name": "RearTyreSize_285/40 R19", "type": "double"},
+    {"name": "RearTyreSize_285/50 R20", "type": "double"}, {"name": "RearTyreSize_285/60
+    R18", "type": "double"}, {"name": "RearTyreSize_285/65 R16", "type": "double"},
+    {"name": "RearTyreSize_285/65 R17", "type": "double"}, {"name": "RearTyreSize_295/30
+    R18", "type": "double"}, {"name": "RearTyreSize_295/35 R21", "type": "double"},
+    {"name": "RearTyreSize_295/40 R19", "type": "double"}, {"name": "RearTyreSize_295/40
+    R20", "type": "double"}, {"name": "RearTyreSize_295/45 R19", "type": "double"},
+    {"name": "RearTyreSize_295/45 R20", "type": "double"}, {"name": "RearTyreSize_305/30
+    R19", "type": "double"}, {"name": "RearTyreSize_315/30 R18", "type": "double"},
+    {"name": "RearTyreSize_7.50 R16", "type": "double"}, {"name": "RearTyreSize_7.50
+    R16 8PR", "type": "double"}, {"name": "RearTyreSize_7.50 R16 C 6PR", "type": "double"},
+    {"name": "RearTyreSize_7.50 R16 C 8PR", "type": "double"}, {"name": "RearTyreSize_7.50
+    R16 LT 8PR", "type": "double"}, {"name": "VFactsClass_Heavy Commercial", "type":
+    "double"}, {"name": "VFactsClass_Light Commercial", "type": "double"}, {"name":
+    "VFactsClass_Passenger", "type": "double"}, {"name": "VFactsClass_SUV", "type":
+    "double"}, {"name": "VFactsSegment_Large", "type": "double"}, {"name": "VFactsSegment_Light",
+    "type": "double"}, {"name": "VFactsSegment_Light Buses", "type": "double"}, {"name":
+    "VFactsSegment_Medium", "type": "double"}, {"name": "VFactsSegment_Micro", "type":
+    "double"}, {"name": "VFactsSegment_PU/CC 4X2", "type": "double"}, {"name": "VFactsSegment_PU/CC
+    4x4", "type": "double"}, {"name": "VFactsSegment_People Movers", "type": "double"},
+    {"name": "VFactsSegment_Small", "type": "double"}, {"name": "VFactsSegment_Sports",
+    "type": "double"}, {"name": "VFactsSegment_Trucks 3,501-7,500 kgs GVM", "type":
+    "double"}, {"name": "VFactsSegment_Upper Large", "type": "double"}, {"name": "VFactsSegment_Vans/CC",
+    "type": "double"}, {"name": "IsPPlateApproved_F", "type": "double"}, {"name":
+    "IsPPlateApproved_T", "type": "double"}, {"name": "Branch_Adelaide (SA)", "type":
+    "double"}, {"name": "Branch_Albany (WA)", "type": "double"}, {"name": "Branch_Alice
+    Springs (NT)", "type": "double"}, {"name": "Branch_Balcatta (WA)", "type": "double"},
+    {"name": "Branch_Belmore (NSW)", "type": "double"}, {"name": "Branch_Canberra
+    (ACT)", "type": "double"}, {"name": "Branch_Darwin (NT)", "type": "double"}, {"name":
+    "Branch_Dubbo (NSW)", "type": "double"}, {"name": "Branch_Geebung (QLD)", "type":
+    "double"}, {"name": "Branch_Hobart (TAS)", "type": "double"}, {"name": "Branch_Newcastle
+    (NSW)", "type": "double"}, {"name": "Branch_Perth (WA)", "type": "double"}, {"name":
+    "Branch_Rundles Wagga Wagga (NSW)", "type": "double"}, {"name": "Branch_Sunshine
+    (VIC)", "type": "double"}, {"name": "Branch_Tamworth (NSW)", "type": "double"},
+    {"name": "Branch_Townsville (QLD)", "type": "double"}, {"name": "Branch_Tullamarine
+    (VIC)", "type": "double"}, {"name": "Branch_Welshpool (WA)", "type": "double"},
+    {"name": "SaleCategory_Auction", "type": "double"}, {"name": "SaleCategory_Dealer
+    Only Auction", "type": "double"}, {"name": "SaleCategory_Fixed Price", "type":
+    "double"}, {"name": "SaleCategory_Pickles Online", "type": "double"}, {"name":
+    "SaleCategory_Special Fixed Price", "type": "double"}, {"name": "SaleCategory_Tender",
+    "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2023-01-03 14:29:29.905182'

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rusernyeoh/projects/datium_data_science_test/DDST/experiments/790569763153412051/6c127bad84b34a24b0ac016123b10021/artifacts
+end_time: 1672756174080
+entry_point_name: ''
+experiment_id: '790569763153412051'
+lifecycle_stage: active
+run_id: 6c127bad84b34a24b0ac016123b10021
+run_name: selected_modelrandom_forest
+run_uuid: 6c127bad84b34a24b0ac016123b10021
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672756054259
+status: 3
+tags: []
+user_id: rusernyeoh
