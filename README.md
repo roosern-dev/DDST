@@ -12,7 +12,7 @@ test - https://drive.google.com/file/d/1_qQN9I1p4-jaeJg4tpgMlZHBLg4GxBRV/view
 
 ### Set up  
 1. Create a 'datasets' folder in project directory and add the .rpt files to datasets folder
-2. Creat a assets folder and 
+2. Create an assets folder and copy contents from https://drive.google.com/drive/folders/15s_g50mBL-g5X0_WjKuqK8gv9uP9Yoxa?usp=share_link
 
 project directory should look like:
 
