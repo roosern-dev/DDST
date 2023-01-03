@@ -38,3 +38,11 @@ project directory should look like:
     - .gitignore  
       
     - README.md  
+
+
+### Viewing experiment logs  
+To view mlflow experiment logs, run the command "mlflow ui" and pass the URI of the "experiments" folder to the "--backend-store-uri" arg.  
+Example:  
+```console
+mlflow ui --backend-store-uri file:///Users/rusernyeoh/projects/datium_data_science_test/DDST/experiments
+```
